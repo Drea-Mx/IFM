@@ -19,7 +19,7 @@ const MainCont = () => {
                         <input type='email' name='email' placeholder='Correo' />
                         <input type='tel' name='tel' placeholder='Teléfono' />
                         <label htmlFor="grado" for="grado">Grado de interés:</label>
-                        <select id="grado" form="carform">
+                        <select name="grado" id="grado">
                             <option value="maternal">Maternal</option>
                             <option value="preescolar1">1° de Preescolar</option>
                             <option value="preescolar2">2° de Preescolar</option>
