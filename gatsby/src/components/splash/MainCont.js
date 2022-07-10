@@ -13,6 +13,7 @@ const MainCont = () => {
                         method="POST" 
                         data-netlify="true"
                         action="/thank-you"
+                        data-netlify-recaptcha="true"
                     >
                         <input type="hidden" name="form-name" value="Formulario Contacto" />
                         <input type='text' name='nombre' placeholder='Nombre de contacto' />
@@ -32,6 +33,7 @@ const MainCont = () => {
                             <option value="primaria6">6° de Primaria</option>
                         </select>
                         <textarea name='mensaje' placeholder='Mensaje' ></textarea>
+                        <div data-netlify-recaptcha="true"></div>
                         <button type='submit'>Enviar</button>
                     </form>
                 </div>
