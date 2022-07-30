@@ -9,8 +9,8 @@ const Top = () => {
                 <img src='/logo.png' alt='Logo IFM' />
             </div>
             <div className='contador'>
-        	    <h1>Nueva Página Web En</h1>
-                <h2>Estamos trabajando para ti</h2>
+                <h1>Estamos Trabajando Para Ti</h1>
+                <h2>Nueva Página Web En:</h2>
                 <Count />
             </div>
         </TopContainer>
