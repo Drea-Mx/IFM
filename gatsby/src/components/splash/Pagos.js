@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Pagos = () => {
     return(
         <PagosContainer>
-            <a rel="noreferrer" target='_blank' href='https://www.sesweb.mx/'>PAGO EN SESWEB</a>
+            <a rel="noreferrer" target='_blank' href='http://institutofranco.servoescolar.mx/Inicio.aspx'>PAGO EN SESWEB</a>
             <a rel="noreferrer" target='_blank' href='https://dep.knotion.com/login'>PAGO LICENCIA KNOTION</a>
         </PagosContainer>
     )
