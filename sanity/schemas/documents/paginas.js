@@ -1,7 +1,7 @@
 export default {
     //
-    name: 'pagina',
-    title: 'Pagina',
+    name: 'paginas',
+    title: 'Páginas',
     type: 'document',
     icon: () => `📄`,
     fields: [

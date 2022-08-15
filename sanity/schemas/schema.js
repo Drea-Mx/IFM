@@ -9,12 +9,23 @@ import imageType from './objects/imageType'
 import link from './objects/menu/link'
 import categoria from './objects/menu/categoria'
 import menu from './objects/menu/menu'
-
 import social from './objects/social'
+
+import heroHome from './objects/home/heroHome'
+import servicio from './objects/home/servicio'
+import servicios from './objects/home/servicios'
+import anuncios from './objects/home/anuncios'
+import anuncio from './objects/home/anuncio'
+import caracteristica from './objects/home/caracteristica'
+import calidad from './objects/home/calidad'
+import sliderHome from './objects/home/sliderHome'
+
 import generalLink from './objects/generalLink'
+import linkToPage from './objects/linkToPage'
 
 import settingsPage from './documents/settingsPage'
-import pagina from './documents/pagina'
+import paginas from './documents/paginas'
+import homePage from './documents/homePage'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,9 +41,20 @@ export default createSchema({
     menu,
     social,
 
+    heroHome,
+    servicio,
+    servicios,
+    anuncio,
+    anuncios,
+    caracteristica,
+    calidad,
+    sliderHome,
+
     generalLink,
+    linkToPage,
 
     settingsPage,
-    pagina
+    paginas,
+    homePage
   ]),
 })

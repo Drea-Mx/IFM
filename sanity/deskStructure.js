@@ -14,5 +14,13 @@ export default () =>
               .schemaType('settingsPage')
               .documentId('settingsPage')
         ),
-        ...S.documentTypeListItems().filter(listItem => !['settingsPage'].includes(listItem.getId()))
+        S.listItem()
+          .title('Página Principal')
+          .icon(() => '🏠')
+          .child(
+            S.document()
+              .schemaType('homePage')
+              .documentId('homePage')
+        ),
+        ...S.documentTypeListItems().filter(listItem => !['settingsPage', 'homePage'].includes(listItem.getId()))
     ])

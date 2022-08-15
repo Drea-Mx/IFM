@@ -68,12 +68,12 @@ export default {
         {
             name: 'terminios',
             title: 'Terminos y Condiciones',
-            type: 'generalLink'
+            type: 'linkToPage'
         },
         {
             name: 'politicas',
             title: 'Politica de Privacidad',
-            type: 'generalLink'
+            type: 'linkToPage'
         },
         {
             name: 'derechos',

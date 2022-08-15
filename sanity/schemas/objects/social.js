@@ -18,5 +18,12 @@ export default {
             title: 'Link',
             type: 'url'
         }
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'nombre',
+            subtitle: 'link',
+            media: 'icono'
+        }
+    }
 }
