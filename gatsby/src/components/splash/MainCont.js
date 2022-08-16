@@ -11,8 +11,8 @@ const MainCont = () => {
                     <form 
                         name="Formulario Contacto" 
                         method="POST" 
-                        data-netlify="true"
                         action="/thank-you"
+                        data-netlify="true"
                         data-netlify-recaptcha="true"
                     >
                         <input type="hidden" name="form-name" value="Formulario Contacto" />
