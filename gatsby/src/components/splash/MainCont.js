@@ -9,9 +9,9 @@ const MainCont = () => {
                     <h2>Contacta con nosotros</h2>
                     <div className='line'></div>
                     <form 
-                        name="Formulario Contacto" 
+                        name="Formulario Contacto"
+                        action="/thank-you" 
                         method="POST" 
-                        action="/thank-you"
                         data-netlify="true"
                         data-netlify-recaptcha="true"
                     >
