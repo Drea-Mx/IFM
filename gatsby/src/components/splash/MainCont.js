@@ -13,7 +13,6 @@ const MainCont = () => {
                         action="/thank-you" 
                         method="POST" 
                         data-netlify="true"
-                        data-netlify-recaptcha="true"
                     >
                         <input type="hidden" name="form-name" value="Formulario Contacto" />
                         <input type='text' name='nombre' placeholder='Nombre de contacto' />
