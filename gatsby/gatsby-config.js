@@ -11,8 +11,13 @@ module.exports = {
     },
     author: `ifm`,
   },
-
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
+  plugins: [{
+    resolve: 'gatsby-source-sanity',
+    options: {
+      "projectId": "du1nlqrj",
+      "dataset": "production"
+    }
+  }, "gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/assets/images/icon.png"

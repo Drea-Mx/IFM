@@ -35,6 +35,6 @@ export const Typography = createGlobalStyle`
 }
 :root {
     --bold: 'Inter Extra Bold', sans-serif;
-    --regular: 'Inter', monospace;
+    --regular: 'Times New Roman', serif;
 }
 `

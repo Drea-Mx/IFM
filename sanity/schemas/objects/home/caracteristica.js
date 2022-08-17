@@ -13,5 +13,12 @@ export default {
                 }
             ]
         }
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'linkToPage.title',
+            subtitle: 'linkToPage.description',
+            media: 'linkToPage.thumbnail'
+        }
+    }
 }

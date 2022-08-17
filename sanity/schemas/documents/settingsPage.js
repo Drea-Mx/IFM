@@ -31,6 +31,12 @@ export default {
             type: 'string'
         },
         {
+            name: 'linkAdmisiones',
+            title: 'Link Admisiones',
+            type: 'reference',
+            to: [{type: 'paginas'}]
+        },
+        {
             name: 'direccion',
             title: 'Dirección',
             type: 'text'

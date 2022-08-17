@@ -13,6 +13,11 @@ export default {
             type: 'string'
         },
         {
+            name: 'imagenDeFondo',
+            title: 'Imagen de Fondo',
+            type: 'imageType'
+        },
+        {
             name: 'description',
             title: 'Descripción',
             type: 'text',

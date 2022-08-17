@@ -28,5 +28,12 @@ export default {
                 }
             ]
         }
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'nombre',
+            subtitle: 'description',
+            media: 'icono'
+        }
+    }
 }

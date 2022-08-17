@@ -7,7 +7,7 @@ export default {
     fields: [
         {
             name: 'title',
-            title: ' Site Title',
+            title: 'Nombre de la página',
             type: 'string',
         },
         {
@@ -22,6 +22,18 @@ export default {
             name: 'thumbnail',
             title: 'Imagen Principal',
             type: 'imageType',
-        }
+        },
+        {
+            name: 'description',
+            title: 'Descripción',
+            type: 'text',
+        },
     ],
+    preview: {
+        select: {
+            title: 'title',
+            subtitle: 'description',
+            media: 'thumbnail'
+        }
+    }
 }

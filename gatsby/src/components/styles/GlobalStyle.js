@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--white);
         color: var(--blue);
-        background-image: url('/background.jpg');
         background-position: center;
         background-size: cover;
         font-family: var(--regular);
