@@ -18,6 +18,7 @@ const Top = () => {
 }
 
 const TopContainer = styled.section`
+background-color: var(--blue);
 width: 100%;
 display: flex;
 @media (max-width: 850px) {

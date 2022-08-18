@@ -11,6 +11,7 @@ const Pagos = () => {
 }
 
 const PagosContainer = styled.section`
+background-color: var(--blue);
 margin-top: 50px;
 display: flex;
 justify-content: center;

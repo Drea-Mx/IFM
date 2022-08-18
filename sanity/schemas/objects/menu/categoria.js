@@ -9,6 +9,16 @@ export default {
             type: 'string'
         },
         {
+            name: 'linkPrincipal',
+            title: 'Link Principal',
+            type: 'reference',
+            to: [
+                {
+                    type: 'paginas'
+                }
+            ]
+        },
+        {
             name: 'links',
             title: 'Links',
             type: 'array',

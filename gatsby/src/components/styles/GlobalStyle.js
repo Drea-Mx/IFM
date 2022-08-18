@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         background-position: center;
         background-size: cover;
         font-family: var(--regular);
+        line-height: 1.2;
         font-size: 16px;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         width: 100%;
@@ -33,5 +34,6 @@ export const GlobalStyle = createGlobalStyle`
 
     h1, h2, h3, h4, h5 {
       font-family: var(--bold);
+      font-weight: bold;
     }
 `

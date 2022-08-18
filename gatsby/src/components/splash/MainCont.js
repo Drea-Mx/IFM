@@ -65,6 +65,7 @@ const MainCont = () => {
 }
 
 const MaintContContainer = styled.section`
+background-color: var(--blue);
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     padding: 50px;

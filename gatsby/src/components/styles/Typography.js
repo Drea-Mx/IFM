@@ -34,7 +34,7 @@ export const Typography = createGlobalStyle`
     font-display: swap;
 }
 :root {
-    --bold: 'Inter Extra Bold', sans-serif;
+    --bold: 'Times New Roman', serif;
     --regular: 'Times New Roman', serif;
 }
 `
