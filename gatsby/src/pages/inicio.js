@@ -5,7 +5,7 @@ import Seo from '../components/layout/seo'
 import { graphql } from "gatsby"
 import Header from '../components/layout/header'
 import Servicios from '../components/home/Servicios'
-
+import Anuncios from '../components/home/Anuncios'
 
 export const data = graphql`
   query  {
@@ -65,6 +65,49 @@ export const data = graphql`
         }
       }
     }
+    #Anuncios
+    anuncios {
+      titulo
+      anuncioPrincipal {
+        title
+        slug {
+          current
+        }
+        thumbnail {
+          alt
+          asset {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              outputPixelDensities: 1.5
+              placeholder: BLURRED
+            )
+          }
+        }
+        _createdAt(formatString: "DD, MMM, YYYY")
+        description
+      }
+      anunciosHome {
+          _key
+          linkToPage {
+            _createdAt(formatString: "DD, MMM, YYYY")
+            title
+            description
+            slug {
+              current
+            }
+            thumbnail {
+              alt
+              asset {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                  outputPixelDensities: 1.5
+                  placeholder: BLURRED
+                )
+              }
+            }
+          }
+        }
+      }
   }
 }
   `
@@ -78,6 +121,7 @@ const inicioPage = ({data}) => {
             <Header />
             <Hero data={data} />
             <Servicios data={data.sanityHomePage.servicios} />
+            <Anuncios data={data.sanityHomePage.anuncios} />
         </Layout>
     )
 }

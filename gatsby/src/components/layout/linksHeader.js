@@ -50,6 +50,9 @@ ul.paginas {
     top: 59px;
     width: 100%;
     display: none;
+    @media (max-width: 680px) {
+        top: 35px
+    }
     li {
         display: block;
         a {

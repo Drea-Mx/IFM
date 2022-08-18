@@ -59,6 +59,7 @@ background-size: cover;
         border: solid 1px var(--blue);
         margin-right: 20px;
         margin-left: 20px;
+        transition: transform 250ms ease-in-out;
         @media (max-width: 680px) {
             margin-right: 0;
             margin-left: 0;
@@ -104,6 +105,12 @@ background-size: cover;
             img {
                 width: 40px;
                 margin: 0 auto;
+            }
+        }
+        &:hover {
+            transform: scale(1.05);
+            @media (max-width: 680px) {
+                transform: none;
             }
         }
     }
