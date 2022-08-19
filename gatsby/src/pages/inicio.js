@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import Header from '../components/layout/header'
 import Servicios from '../components/home/Servicios'
 import Anuncios from '../components/home/Anuncios'
+import Calidad from '../components/home/Calidad'
 
 export const data = graphql`
   query  {
@@ -108,6 +109,35 @@ export const data = graphql`
           }
         }
       }
+      #Calidad
+      calidad {
+        titulo
+        description
+        imagenDeFondo {
+          asset {
+            url
+          }
+        }
+        caracteristicas {
+          _key
+          linkToPage {
+            title
+            thumbnail {
+              alt
+              asset {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                  placeholder: BLURRED
+                  outputPixelDensities: 1.5
+                )
+              }
+            }
+            slug {
+              current
+            }
+          }
+        }
+      }
   }
 }
   `
@@ -122,6 +152,7 @@ const inicioPage = ({data}) => {
             <Hero data={data} />
             <Servicios data={data.sanityHomePage.servicios} />
             <Anuncios data={data.sanityHomePage.anuncios} />
+            <Calidad data={data.sanityHomePage.calidad} />
         </Layout>
     )
 }
