@@ -7,6 +7,8 @@ import Header from '../components/layout/header'
 import Servicios from '../components/home/Servicios'
 import Anuncios from '../components/home/Anuncios'
 import Calidad from '../components/home/Calidad'
+import SliderHome from '../components/home/SliderHome'
+import Footer from '../components/layout/footer'
 
 export const data = graphql`
   query  {
@@ -138,6 +140,21 @@ export const data = graphql`
           }
         }
       }
+      #Slider
+      sliderHome {
+        titulo
+        slider {
+          _key
+          alt
+          asset {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              outputPixelDensities: 1.5
+              placeholder: BLURRED
+            )
+          }
+        }
+      }
   }
 }
   `
@@ -153,6 +170,8 @@ const inicioPage = ({data}) => {
             <Servicios data={data.sanityHomePage.servicios} />
             <Anuncios data={data.sanityHomePage.anuncios} />
             <Calidad data={data.sanityHomePage.calidad} />
+            <SliderHome data={data.sanityHomePage.sliderHome} />
+            <Footer />
         </Layout>
     )
 }

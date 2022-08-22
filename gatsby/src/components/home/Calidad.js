@@ -58,6 +58,7 @@ const CalidadContainer = styled.section`
     }
     p {
         margin-top: 10px;
+        font-weight: bold;
     }
     .caracteristicas {
         margin-top: 50px;

@@ -11,7 +11,7 @@ const Servicios = ({data}) => {
                         const iconGetDataImage = getImage(icono.asset)
                         const iconGetDataImageAlt = icono.alt
                         return (
-                            <div key={_key} className='servicio' >
+                            <Link to={`/${linkToPage.slug.current}`} key={_key} className='servicio' >
                                 <div className='icono'>
                                     <div className='image'>
                                         <GatsbyImage
@@ -28,9 +28,9 @@ const Servicios = ({data}) => {
                                     <p>{description}</p>
                                 </div>
                                 <div className='link'>
-                                    <Link to={`/${linkToPage.slug.current}`}><img src='/arrow.png' alt='Link a página IFM' /></Link>
+                                    <img src='/arrow.png' alt='Link a página IFM' />
                                 </div>
-                            </div>
+                            </Link>
                         );
                 })}
             </div>
@@ -98,10 +98,8 @@ background-size: cover;
         .link {
             margin-top: 20px;
             padding-bottom: 20px;
-            a {
-                display: block;
-                text-align: center;
-            }
+            display: block;
+            text-align: center;
             img {
                 width: 40px;
                 margin: 0 auto;

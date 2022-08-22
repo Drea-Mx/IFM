@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         -webkit-font-smoothing: antialiased;
         @media (max-width: 680px) {
-          font-size: 12px;
+          font-size: 14px;
       }
     }
 

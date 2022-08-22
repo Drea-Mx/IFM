@@ -28,6 +28,18 @@ export default {
             title: 'Descripción',
             type: 'text',
         },
+        //Modulos start
+        {
+            name: 'moduleArray',
+            title: 'Modulos Editoriales',
+            type: 'moduleArray'
+        },
+        // Modulos end
+        {
+            name: 'seo',
+            title: 'SEO',
+            type: 'seo'
+        }
     ],
     preview: {
         select: {

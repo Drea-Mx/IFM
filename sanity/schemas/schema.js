@@ -10,6 +10,17 @@ import link from './objects/menu/link'
 import categoria from './objects/menu/categoria'
 import menu from './objects/menu/menu'
 import social from './objects/social'
+import blockModule from './objects/blockModule'
+
+//Array Module
+import texto from './objects/arrays/modules/texto'
+import imagenTexto from './objects/arrays/modules/imagenTexto'
+import codigo from './objects/arrays/modules/codigo'
+import objeto from './objects/arrays/objeto'
+import galeria from './objects/arrays/modules/galeria'
+import paginasObject from './objects/arrays/modules/paginasObject'
+import sliderObject from './objects/arrays/modules/sliderObject'
+import moduleArray from './objects/arrays/moduleArray'
 
 import heroHome from './objects/home/heroHome'
 import servicio from './objects/home/servicio'
@@ -23,6 +34,8 @@ import sliderHome from './objects/home/sliderHome'
 import generalLink from './objects/generalLink'
 import linkToPage from './objects/linkToPage'
 
+import seo from './objects/seo'
+
 import settingsPage from './documents/settingsPage'
 import paginas from './documents/paginas'
 import homePage from './documents/homePage'
@@ -35,6 +48,16 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     imageType,
+    blockModule,
+
+    texto,
+    imagenTexto,
+    codigo,
+    objeto,
+    galeria,
+    paginasObject,
+    sliderObject,
+    moduleArray,
 
     link,
     categoria,
@@ -53,6 +76,8 @@ export default createSchema({
     generalLink,
     linkToPage,
 
+    seo,
+    
     settingsPage,
     paginas,
     homePage
