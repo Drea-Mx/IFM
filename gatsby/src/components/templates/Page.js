@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Modules from '../components/modules/Modules'
 
-
 export default function SingleTagPage({ data: {pages}}) {
 
 
