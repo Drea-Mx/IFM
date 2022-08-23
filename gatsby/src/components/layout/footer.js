@@ -204,15 +204,21 @@ const FooterContainer = styled.footer`
         @media (max-width: 680px) {
             flex-direction: column-reverse;
             text-align: center;
-            padding-bottom: 100px;
+            padding-bottom: 50px;
         }
         .de {
             @media (max-width: 680px) {
                 margin-bottom: 50px;
                 margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
             }
             a {
                 padding-left: 50px;
+                @media (max-width: 680px) {
+                    padding-left: 0;
+                }
             }
         }
     }

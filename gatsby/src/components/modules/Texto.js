@@ -19,6 +19,10 @@ margin-bottom: 50px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    p {
+        display: block;
+        padding: 10px 0;
+    }
 `
 
 export default Texto

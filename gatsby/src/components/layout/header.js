@@ -138,6 +138,9 @@ const HeaderContainer = styled.header`
         .top {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            @media (max-width: 680px) {
+                grid-template-columns: 1fr 1fr;
+            }
             a {
                 border: solid 1px var(--blue);
                 text-align: center;
@@ -148,6 +151,9 @@ const HeaderContainer = styled.header`
                 background-color: #52DE20;
                 color: white;
                 font-weight: bold;
+                @media (max-width: 680px) {
+                    grid-column: 1 / span 2;
+                }
             }
         }
         nav {
