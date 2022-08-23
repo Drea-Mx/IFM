@@ -69,7 +69,7 @@ color: white;
 padding: 50px;
 @media (max-width: 680px) {
     flex-direction: column;
-    padding: 50px 20px;
+    padding: 20px;
 }
     .iz {
         width: 50%;
@@ -93,6 +93,10 @@ padding: 50px;
                 border-top: none;
                 transition: all 350ms ease;
                 width: 100%;
+                @media (max-width: 680px) {
+                    position: static;
+                    padding: 20px 0 0;
+                }
                 .date {
                     border-bottom: solid 1px white;
                     padding-bottom: 5px;
