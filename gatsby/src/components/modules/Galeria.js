@@ -45,6 +45,17 @@ const GaleriaContainer = styled.div`
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        p {
+                word-break: break-word;
+            }
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
     }
 `
 

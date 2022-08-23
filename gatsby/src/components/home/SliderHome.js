@@ -100,6 +100,9 @@ margin-top: 50px;
 }
 .slick-dots {
   bottom: -50px;
+  @media (max-width: 680px) {
+    display: none;
+  }
     li {
       button {
         &:before {
