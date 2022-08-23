@@ -80,6 +80,8 @@ padding: 50px;
             position: relative;
             .texto {
                 position: absolute;
+                left: 0;
+                right: 0;
                 bottom: 0;
                 padding: 20px;
                 background-color: rgba(0, 55, 100, 0.5);
