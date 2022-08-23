@@ -78,6 +78,9 @@ padding: 50px;
         }
         .anuncioPrincipal {
             position: relative;
+            @media (max-width: 680px) {
+                width: 100%;
+            }
             .texto {
                 position: absolute;
                 left: 0;
@@ -94,14 +97,21 @@ padding: 50px;
                     border-bottom: solid 1px white;
                     padding-bottom: 5px;
                     font-size: 0.8rem;
+                    width: 100%;
                 }
                 .titulo {
                     margin-top: 5px;
                     padding-bottom: 5px;
                     border-bottom: solid 1px white;
+                    @media (max-width: 680px) {
+                        width: 100%;
+                    }
                 }
                 .desc {
                     padding-top: 5px;
+                    @media (max-width: 680px) {
+                        width: 100%;
+                    }
                 }
             }
             &:hover {
