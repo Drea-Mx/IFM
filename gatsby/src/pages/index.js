@@ -164,7 +164,7 @@ export const data = graphql`
 const IndexPage = ({data}) => {
     return(
         <Layout>
-            <Seo title='Instituto Franco Mexicano' description='Estamos Trabajando Para Ti' image='/ifm.jpg' />
+            <Seo title={data.sanityHomePage.heroSection.title} description={data.sanityHomePage.heroSection.description} image={data.sanityHomePage.heroSection.imagen.asset.url} />
             <Header />
             <Hero data={data} />
             <Servicios data={data.sanityHomePage.servicios} />

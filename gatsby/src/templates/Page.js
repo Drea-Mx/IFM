@@ -6,6 +6,7 @@ import Footer from '../components/layout/footer'
 import styled from 'styled-components'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Modules from '../components/modules/Modules'
+import Seo from '../components/layout/seo'
 
 export default function SingleTagPage({ data: {pages}}) {
 
@@ -16,6 +17,7 @@ export default function SingleTagPage({ data: {pages}}) {
     
     return (
         <Layout>
+            <Seo title={pages.seo.title} description={pages.seo.description} image={pages.seo.image.asset.url} />
             <Header />
             <HeroPageContainer>
                 <div className='container'>
@@ -134,6 +136,15 @@ export const query = graphql`
                     outputPixelDensities: 1.5
                     placeholder: BLURRED
                     )
+                }
+            }
+            seo {
+                title
+                description
+                image {
+                    asset {
+                        url
+                    }
                 }
             }
             moduleArray {
