@@ -64,7 +64,7 @@ const Anuncios = ({data}) => {
 
 const AnunciosContainer = styled.section`
 display: flex;
-background-color: var(--blue);
+background-color: #68B2E0;
 color: white;
 padding: 50px;
 @media (max-width: 680px) {
@@ -81,15 +81,22 @@ padding: 50px;
             @media (max-width: 680px) {
                 width: 100%;
             }
+            .image {
+                height: 550px;
+                overflow-y: scroll;
+                @media (max-width: 680px) {
+                    height: 300px;
+                }
+            }
             .texto {
                 position: absolute;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 padding: 20px;
-                background-color: rgba(0, 55, 100, 0.5);
+                background-color: rgba(36, 88, 178, 0.5);
                 color: white;
-                border: solid 1px var(--blue);
+                border: solid 1px #2458B2;
                 border-top: none;
                 transition: all 350ms ease;
                 width: 100%;
@@ -120,7 +127,7 @@ padding: 50px;
             }
             &:hover {
                 .texto {
-                    background-color: rgba(0, 55, 100, 0.9);
+                    background-color: rgba(36, 88, 178, 0.9);
                 }
             }
         }
@@ -139,7 +146,7 @@ padding: 50px;
         }
         .anuncios {
             margin-top: 20px;
-            height: 40vw;
+            height: 490px;
             overflow-y: scroll;
             @media (max-width: 680px) {
                 height: 300px;

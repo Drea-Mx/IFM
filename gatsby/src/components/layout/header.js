@@ -97,9 +97,10 @@ const HeaderContainer = styled.header`
     background-color: white;
     position: fixed;
     width: 100%;
-    height: 90px;
+    height: 91px;
     display: flex;
     z-index: 2;
+    border-bottom: solid 1px var(--blue);
     @media (max-width: 680px) {
         flex-direction: column;
     }
@@ -109,7 +110,6 @@ const HeaderContainer = styled.header`
         justify-content: center;
         align-items: center;
         height: 100%;
-        border-bottom: solid 1px white;
         @media (max-width: 1000px) {
             width: 30%;
         }
@@ -118,7 +118,7 @@ const HeaderContainer = styled.header`
             width: 100%;
         }
         .image {
-            width: 280px;
+            width: 380px;
             @media (max-width: 1000px) {
                 width: 80%;
             }
@@ -148,7 +148,7 @@ const HeaderContainer = styled.header`
                 background-color: white;
             }
             a.cta {
-                background-color: #52DE20;
+                background-color: #F5B840;
                 color: white;
                 font-weight: bold;
                 @media (max-width: 680px) {
@@ -163,20 +163,58 @@ const HeaderContainer = styled.header`
                 flex-direction: row;
                 justify-content: space-between;
                 li.categoria {
-                    border: solid 1px white;
+                    border: solid 1px var(--blue);
+                    border-bottom: none;
                     border-top: none;
                     flex: 1 1 auto;
                     position: relative;
-                    background-color: var(--blue);
                     color: white;
                     &:first-child {
+                        background-color: #68B2E0;
                         border-left: solid 1px var(--blue);
+                    }
+                    &:nth-child(2) {
+                        background-color: #F4B840;
+                        .paginas {
+                            background-color: #F4B840;
+                            .pagina {
+                                background-color: #F4B840;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        background-color: #2457B1;
+                        .paginas {
+                            background-color: #2457B1;
+                            .pagina {
+                                background-color: #2457B1;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        background-color: #939598;
+                        .paginas {
+                            background-color: #939598;
+                            .pagina {
+                                background-color: #939598;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        background-color: var(--blue);
+                        .paginas {
+                            background-color: var(--blue);
+                            .pagina {
+                                background-color: var(--blue);
+                                border-top: solid 1px white;
+                            }
+                        }
                     }
                     &:hover {
                         border-left: solid 1px var(--blue);
                         border-bottom: solid 1px var(--blue);
-                        background-color: white;
-                        color: var(--blue);
+                        color: white;
+                        background-color: var(--blue);
                     }
                     a {
                         padding: 20px 0;

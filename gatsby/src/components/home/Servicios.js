@@ -65,6 +65,21 @@ background-size: cover;
             margin-left: 0;
             margin-bottom: 20px;
         }
+        &:nth-child(1) {
+                .titulo {
+                    background-color: #69B2DF;
+                }
+            }
+        &:nth-child(2) {
+                .titulo {
+                    background-color: #F4B840;
+                }
+            }
+        &:nth-child(3) {
+                .titulo {
+                    background-color: #2457B2;
+                }
+            }
         .icono {
             width: 100%;
             .image {
@@ -75,7 +90,6 @@ background-size: cover;
             }
         }
         .titulo {
-            background-color: var(--blue);
             padding: 20px 10px;
             h2 {
                 color: white;

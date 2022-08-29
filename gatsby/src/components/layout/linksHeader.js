@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const LinksHeader = ({links, titulo, linkPrincipal}) => {
     return (
-        <LinkContainer>
+        <LinkContainer className='categoria'>
             <Link className='link' to={`/${linkPrincipal.slug.current}`}>{titulo}</Link>
             <ul className='paginas'>
             {links.map(({ _key, pagina }) => {
@@ -29,7 +29,6 @@ const LinkContainer = styled.li`
     &:hover {
         border-left: solid 1px var(--blue);
         border-bottom: solid 1px var(--blue);
-        background-color: white;
         color: var(--blue);
         ul.paginas {
             display: block;
@@ -61,8 +60,7 @@ ul.paginas {
             width: 100%;
             padding: 10px 5px;
             text-align: left;
-            background-color: white;
-            color: var(--blue);
+            color: white;
             &:hover {
                 color: white;
                 background-color: var(--blue);

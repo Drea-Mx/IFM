@@ -54,7 +54,7 @@ const SliderHome = ({data})  => {
 }
 
 const SliderHomeContainer = styled.section`
-    background-color: var(--blue);
+    background-color: #F5B840;
     color: white;
     padding: 50px 50px 100px;
     @media (max-width: 680px) {
