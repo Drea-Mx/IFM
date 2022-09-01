@@ -13,12 +13,13 @@ const Codigo = ({data}) => {
 const CodigoContainer = styled.div`
 margin-top: 50px;
 margin-bottom: 50px;
+width: 80%;
+margin: 0 auto;
 iframe {
     width: 100%;
+    height: 500px;
 }
 form {
-    width: 50%;
-    margin: 0 auto;
     text-align: left;
     @media (max-width: 680px) {
         width: 100%;

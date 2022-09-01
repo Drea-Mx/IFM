@@ -36,7 +36,7 @@ export default function SingleTagPage({ data: {pages}}) {
             </HeroPageContainer>
             <BodyContainer className='body'>
                 <div className='date'>
-                    <p>{pages._createdAt}</p>
+                    <p>{pages._updatedAt}</p>
                     <div className='line'></div>
                 </div>
                 <Modules moduleArray={pages.moduleArray} />
@@ -126,7 +126,7 @@ export const query = graphql`
             slug {
                 current
             }
-            _createdAt(formatString: "DD, MMM, YYYY")
+            _updatedAt(formatString: "DD, MMM, YYYY")
             description
             thumbnail {
                 alt

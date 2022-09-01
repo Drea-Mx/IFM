@@ -20,7 +20,7 @@ const Anuncios = ({data}) => {
                         />
                     </div>
                     <div className='texto'>
-                        <p className='date'>{data.anuncioPrincipal._createdAt}</p>
+                        <p className='date'>{data.anuncioPrincipal._updatedAt}</p>
                         <h2 className='titulo'>{data.anuncioPrincipal.title}</h2>
                         <p className='desc'>{strFirstThree}...</p>
                     </div>
@@ -45,7 +45,7 @@ const Anuncios = ({data}) => {
                                     </div>
                                     <div className='texto'>
                                         <div className='top'>
-                                            <p className='date'>{linkToPage._createdAt}</p>
+                                            <p className='date'>{linkToPage._updatedAt}</p>
                                             <h3 className='titulo'>{linkToPage.title}</h3>
                                             <p className='desc'>{strFirst}...</p>
                                         </div>

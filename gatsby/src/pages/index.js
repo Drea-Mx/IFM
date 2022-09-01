@@ -86,13 +86,13 @@ export const data = graphql`
             )
           }
         }
-        _createdAt(formatString: "DD, MMM, YYYY")
+        _updatedAt(formatString: "DD, MMM, YYYY")
         description
       }
       anunciosHome {
           _key
           linkToPage {
-            _createdAt(formatString: "DD, MMM, YYYY")
+            _updatedAt(formatString: "DD, MMM, YYYY")
             title
             description
             slug {
