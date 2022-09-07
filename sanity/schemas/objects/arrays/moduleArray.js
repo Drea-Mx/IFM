@@ -11,5 +11,6 @@ export default {
         {type: 'galeria'},
         {type: 'paginasObject'},
         {type: 'sliderObject'},
+        {type: 'archivo'},
     ]
 }

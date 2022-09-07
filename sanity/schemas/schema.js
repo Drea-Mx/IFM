@@ -21,6 +21,7 @@ import galeria from './objects/arrays/modules/galeria'
 import paginasObject from './objects/arrays/modules/paginasObject'
 import sliderObject from './objects/arrays/modules/sliderObject'
 import moduleArray from './objects/arrays/moduleArray'
+import archivo from './objects/arrays/modules/archivo'
 
 import heroHome from './objects/home/heroHome'
 import servicio from './objects/home/servicio'
@@ -57,6 +58,7 @@ export default createSchema({
     galeria,
     paginasObject,
     sliderObject,
+    archivo,
     moduleArray,
 
     link,

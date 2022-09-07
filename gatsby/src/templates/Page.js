@@ -153,6 +153,16 @@ export const query = graphql`
                     _type
                     campoDeCodigo
                 }
+                ... on SanityArchivo {
+                    _key
+                    _type
+                    documento {
+                    asset {
+                        originalFilename
+                        url
+                    }
+                    }
+                }
                 ... on SanityGaleria {
                     _key
                     _type

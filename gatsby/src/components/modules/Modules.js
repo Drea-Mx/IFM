@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Archivo from "./Archivo";
 import Codigo from "./Codigo";
 import Galeria from "./Galeria";
 import ImagenTexto from "./ImagenTexto";
@@ -10,6 +11,7 @@ import Texto from "./Texto";
 
 const modulesArr = [
   { name: "codigo", comp: Codigo },
+  { name: "archivo", comp: Archivo },
   { name: "galeria", comp: Galeria },
   { name: "imageType", comp: ImageType },
   { name: "imagenTexto", comp: ImagenTexto },
