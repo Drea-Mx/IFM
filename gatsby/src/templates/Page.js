@@ -96,7 +96,8 @@ padding-top: 90px;
 `
 
 const BodyContainer = styled.section`
-width: 80%;
+width: 70%;
+font-size: 24px;
 margin: 50px auto;
 @media (max-width: 680px) {
     width: 100%;
