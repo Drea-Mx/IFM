@@ -23,14 +23,9 @@ export default {
             type: 'imageType'
         },
         {
-            name: 'videoMP4',
-            title: 'Video MP4',
-            type: 'file'
+            name: 'videoEmbed',
+            title: 'Código Video',
+            type: 'string'
         },
-        {
-            name: 'videoWebM',
-            title: 'Video WebM',
-            type: 'file'
-        }
     ]
 }

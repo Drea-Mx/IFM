@@ -17,16 +17,7 @@ export const data = graphql`
     heroSection {
       title
       description
-      videoMP4 {
-        asset {
-          url
-        }
-      }
-      videoWebM {
-        asset {
-          url
-        }
-      }
+      videoEmbed
       imagen {
         alt
         asset {

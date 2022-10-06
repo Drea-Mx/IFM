@@ -4,9 +4,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Hero = ({data}) => {
 
-    const mp4 = data.sanityHomePage.heroSection.videoMP4.asset.url
-    const webm = data.sanityHomePage.heroSection.videoWebM.asset.url
-
     const bgGetDataImage = getImage(data.sanityHomePage.heroSection.imagen.asset)
     const bgGetDataImageAlt = data.sanityHomePage.heroSection.imagen.alt
 
@@ -18,10 +15,8 @@ const Hero = ({data}) => {
             </div>
             <div className='de'>
                 <div className='video'>
-                    <video muted loop autoPlay poster={data.sanityHomePage.heroSection.imagen.asset.url}>
-                        <source src={webm} type="video/webm" />
-                        <source src={mp4} type="video/mp4" />
-                    </video>
+                    {data.videoEmbed}
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LYYQksysCOs?autoplay=1&mute=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='image'>
                     <GatsbyImage
@@ -73,12 +68,21 @@ const HeroContainer = styled.section`
             }
         }
         .video {
-            height: 100%;
-            line-height: 0;
+            position:relative;
+            height:100%;
+            overflow:hidden;
             video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+            iframe {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                transform: scale(2);
             }
             @media (max-width: 680px) {
                 display: none;
